@@ -45,3 +45,65 @@ p { color: #c9c9d1; line-height: 1.6; }
   .sectionHead { align-items:flex-start; flex-direction:column; }
   .history { grid-template-columns: 1fr; }
 }
+
+.notice {
+  margin: 0 0 18px;
+  padding: 14px 18px;
+  border: 1px solid rgba(255, 211, 45, 0.35);
+  background: rgba(255, 211, 45, 0.08);
+  border-radius: 18px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.clientForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.4fr auto;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.clientForm input {
+  width: 100%;
+  border: 1px solid #333;
+  background: #09090b;
+  color: white;
+  padding: 13px 14px;
+  border-radius: 14px;
+  outline: none;
+}
+
+.clientForm input:focus {
+  border-color: #ffd32d;
+}
+
+.clientForm button,
+.danger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 0;
+  border-radius: 14px;
+  padding: 13px 16px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.clientForm button {
+  background: #ffd32d;
+  color: #060606;
+}
+
+.danger {
+  margin-top: 18px;
+  background: rgba(255, 60, 60, 0.12);
+  color: #ff6b6b;
+  border: 1px solid rgba(255, 60, 60, 0.25);
+}
+
+@media (max-width: 950px) {
+  .clientForm {
+    grid-template-columns: 1fr;
+  }
+}
